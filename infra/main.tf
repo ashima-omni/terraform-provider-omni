@@ -40,6 +40,14 @@ resource "omni_folder" "marketing" {
   path = "marketing"
 }
 
+resource "omni_user_group" "marketing" {
+  display_name = "Marketing"
+}
+resource "omni_folder" "marketing" {
+  name = "Marketing"
+  path = "marketing"
+}
+
 
 resource "omni_user" "demo" {
   user_name    = "tf-demo@example.invalid"
