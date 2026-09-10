@@ -39,6 +39,10 @@ resource "omni_folder" "marketing" {
   name = "Marketing"
   path = "marketing"
 }
+resource "omni_folder" "marketing3" {
+  name = "Marketing3"
+  path = "marketing3"
+}
 
 
 resource "omni_user" "demo" {
