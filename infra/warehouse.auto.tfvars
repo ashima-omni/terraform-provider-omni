@@ -1,15 +1,4 @@
 # Connections. A change here is a credential or warehouse change.
-#
-# Secrets are not in this file. They come from connection_passwords,
-# connection_private_keys and connection_oauth_secrets, passed from a secret
-# store or TF_VAR_ in CI.
-#
-# Snowflake programmatic access tokens go in connection_passwords. Omni has no
-# PAT authentication type: a PAT is passed wherever a password would be, and
-# authentication_type stays at its snowflake-password default.
-#
-# Most tenants share embed-base. Only a tenant needing its own database or
-# schema gets a connection of its own, like embed-initech below.
 
 connections = {
   "embed-base" = {
